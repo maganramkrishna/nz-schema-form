@@ -5,7 +5,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MarkdownModule } from 'ngx-md';
+import { NgxMdModule } from 'ngx-md';
+import { MarkdownModule } from 'ngx-markdown';
 import { AceEditorModule } from 'ng2-ace-editor';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 
@@ -64,6 +65,7 @@ export function StartupServiceFactory(startupService: StartupService): Function 
     ], environment.production ? { useHash: true, preloadingStrategy: PreloadAllModules } : { useHash: true }),
     NgZorroAntdModule.forRoot(),
     JsonSchemaModule,
+    NgxMdModule.forRoot(),
     MarkdownModule.forRoot(),
     UEditorModule.forRoot({
         // **注：** 建议使用本地路径；以下为了减少 ng-alain 脚手架的包体大小引用了CDN，可能会有部分功能受影响

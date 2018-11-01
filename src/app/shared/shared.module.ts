@@ -4,7 +4,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { MarkdownModule } from 'ngx-md';
+import { NgxMdModule } from 'ngx-md';
+import { MarkdownModule } from 'ngx-markdown';
 import { AceEditorModule } from 'ng2-ace-editor';
 import { UEditorModule } from 'ngx-ueditor';
 import { NgxTinymceModule } from 'ngx-tinymce';
@@ -12,6 +13,7 @@ import { NzSchemaFormModule } from 'nz-schema-form';
 
 const THIRDMODULES = [
     NgZorroAntdModule,
+    NgxMdModule,
     MarkdownModule,
     AceEditorModule,
     UEditorModule,
