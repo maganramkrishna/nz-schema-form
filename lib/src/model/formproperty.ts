@@ -1,8 +1,6 @@
 // tslint:disable:no-use-before-declare
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Observable, BehaviorSubject, combineLatest } from 'rxjs';
 import { map, distinctUntilChanged } from 'rxjs/operators';
-import { combineLatest } from 'rxjs/observable/combineLatest';
 import { SchemaValidatorFactory } from '../schema.validator.factory';
 import { ValidatorRegistry } from './validatorregistry';
 import { SchemaFormOptions, NZ_SF_OPTIONS_TOKEN } from '../schema-form.options';
